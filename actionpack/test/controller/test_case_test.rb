@@ -239,7 +239,7 @@ XML
   end
   
   def test_json_body_with_post
-    param = { 'id' => 1 }.to_json
+    param = { id: 1 }.to_json
     
     post :render_body, param, format: :json
     
@@ -247,7 +247,7 @@ XML
   end
   
   def test_json_body_with_put
-    param = { 'id' => 1 }.to_json
+    param = { id: 1 }.to_json
     
     put :render_body, param, format: :json
     
