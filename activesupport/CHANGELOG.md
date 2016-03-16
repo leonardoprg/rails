@@ -1,3 +1,24 @@
+*   Prevent `Marshal.load` from looping infinitely when trying to autoload a constant
+    which resolves to a different name.
+
+    *Olek Janiszewski*
+
+
+## Rails 4.2.6 (March 07, 2016) ##
+
+*   No changes.
+
+
+## Rails 4.2.5.2 (February 26, 2016) ##
+
+*   No changes.
+
+
+## Rails 4.2.5.1 (January 25, 2015) ##
+
+*   No changes.
+
+
 ## Rails 4.2.5 (November 12, 2015) ##
 
 *   Fix `TimeWithZone#eql?` to properly handle `TimeWithZone` created from `DateTime`:

@@ -1,3 +1,30 @@
+*   ActiveRecord::Relation#count: raise an ArgumentError when finder options
+    are specified or an ActiveRecord::StatementInvalid when an invalid type
+    is provided for a column name (e.g. a Hash).
+
+    Fixes #20434
+
+    *Konstantinos Rousis*
+
+*   Correctly pass MySQL options when using structure_dump or structure_load
+
+    Specifically, it fixes an issue when using SSL authentication.
+
+    *Alex Coomans*
+
+
+## Rails 4.2.6 (March 07, 2016) ##
+
+*   Fix a bug where using `t.foreign_key` twice with the same `to_table` within
+    the same table definition would only create one foreign key.
+
+    *George Millo*
+
+*   Fix regression in dirty attribute tracking after #dup.  Changes to the
+    clone no longer show as changed attributes in the original object.
+
+    *Dominic Cleal*
+
 *   Fix regression when loading fixture files with symbol keys.
 
     Closes #22584.
@@ -15,6 +42,16 @@
     models (usually tables and views).
 
     *Yves Senn*, *Matthew Draper*
+
+
+## Rails 4.2.5.2 (February 26, 2016) ##
+
+*   No changes.
+
+
+## Rails 4.2.5.1 (January 25, 2015) ##
+
+*   No changes.
 
 
 ## Rails 4.2.5 (November 12, 2015) ##
